@@ -19,7 +19,7 @@ def generate_combined_prompt(details, numbers, known_passwords, custom_rules):
 # ============= Password Generation =============
 def generate_password_batches(combined_prompt, batches_input):
     # Initialize the LM Studio client
-    client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
+    client = OpenAI(base_url="[INSERT BASE URL HERE]", api_key="[INSERT API KEY HERE")
     all_passwords = []
 
     for batch in range(batches_input):
@@ -31,7 +31,7 @@ def generate_password_batches(combined_prompt, batches_input):
 
         # Generate passwords using the LM Studio API
         completion = client.chat.completions.create(
-            model="lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF",
+            model="[INSERT MODEL HERE]",
             messages=[
                 {"role": "system", "content": "You're an expert psychologist and master Ethical Hacker with a major in Password cracking. Your job is to analyze a victim's details and try to guess their password."},
                 {"role": "user", "content": combined_prompt}
