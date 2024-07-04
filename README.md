@@ -23,7 +23,7 @@ Follow this guide to set up, connect to an LLM API, and use the tool effectively
 
 1. **Clone the Repository**
     ```sh
-    git clone https://github.com/omarwastaken/SHADE.git
+    git clone https://github.com/omarwastaken/S.H.A.D.E.git
     cd SHADE
     ```
 
